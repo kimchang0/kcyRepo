@@ -12,11 +12,11 @@ public class Study {
 		char ch;
 
 		while (true) {
-			System.out.printf("더할 첫 수 입력: ");
+			System.out.printf("더할 첫 수를 입력하십시오: ");
 			a = scan.nextInt();
-			System.out.printf("더할 두번 째 수 입력: ");
+			System.out.printf("더할 두번 째 수를 입력하십시오: ");
 			b = scan.nextInt();
-			System.out.printf("계산할 연산자를 입력하세요: ");
+			System.out.printf("계산할 연산자를 입력하십시오: ");
 			ch = (char) System.in.read();
 
 			switch (ch) {
