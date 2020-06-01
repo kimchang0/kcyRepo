@@ -37,7 +37,7 @@ public class Study {
 				System.out.printf("%d % %d = %d 입니다. \n", a, b, a % b);
 				break;
 			default:
-				System.out.printf("연산자를 잘 못 입력했습니다. \n");
+				System.out.printf("연산자를 잘 못 입력했습니다... \n");
 				break;
 				
 			}
