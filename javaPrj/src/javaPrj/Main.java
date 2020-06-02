@@ -9,9 +9,91 @@ public class Main {
 		
 		
 		
+
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = 666;
+		
+		System.out.printf("%d%d", a, b);
 		
 		
 		
+		
+		
+		/*
+		int a = 121; 
+		int d [] = new int [a]; 
+		
+		for(int i = 0; i < d.length; i++) { 
+			d[i] = i + 1;
+		}
+		
+		int k = 0;
+		int j = 2; 
+		int y = 0; 
+		int h = -1;
+
+		while(k < d.length) { 
+			while(j < d[k]) { 
+				y = 0;
+				if(d[k] % j == 0) { 
+					if(d[k] != j) {
+						y++; 
+					}
+					break;
+				} 
+				j++; 
+			}
+			if(y==0) {
+				h++;
+			}
+			k++; 
+			j = 2; 
+		}
+		System.out.println(h);
+*/
+
+		
+		
+		
+		
+		/*
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int [] d = new int [10]; // 배열공간 10 선언
+		int k = 0; //int형 변수 k = 0 선언
+		
+		for(int i = 0; i < 5; i++) {// d 배열에 숫자 입력
+		d[i] = scan.nextInt();
+		}
+		
+		for(int i = 0; i < 5; i++) {// d 배열 오름차순 정렬
+			for(int j = i + 1; j < 5; j++) {
+				if(d[i] > d[j]) {
+					int temp = d[i];
+					d[i] = d[j];
+					d[j] = temp;
+				}
+			}
+		}
+		
+		int budget = scan.nextInt();// budget 선언 및 입력
+		
+		for(int i = 0; i < d.length; i++) {// budget에서 원하는 수 작은 순서대로 뺌(가장 많은 부서에 나눠주기 위해)
+			int t = d[i];
+			if(budget < t) {// 남은 금액보다 뺄 금액이 크면 포문 종료
+				break;
+			}
+			budget -= d[i]; // budget에서 d[i]만큼 뺌
+			k++; //부서에 나눠준 횟수
+		}
+		
+		System.out.println("last k =" + k); // 나눠준 횟수 표현
+		*/
+
 		/*
 		Scanner scan = new Scanner(System.in);
 		
@@ -43,36 +125,6 @@ public class Main {
 					
 		}
 		*/
-		
-		
-		
-		int k= 0;
-		
-		int [] a = new int [20];
-		
-		for(int i = 0; i < a.length; i++) {
-			a[i] = i + 4;
-			System.out.println(a[i]);
-			
-			if(a[i] % 2 != 0) {
-				if(a[i] % 3 != 0) {
-					if(a[i] % 5 != 0) {
-						if(a[i] % 7 != 0) {
-							k++;
-						}
-					}
-				}
-			}
-		}
-		System.out.println(k);
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		//System.out.println(k-1);
 		
