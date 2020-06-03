@@ -6,21 +6,28 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		
+		Scanner scan = new Scanner(System.in);
 		
 		
 
-		
-		Scanner scan = new Scanner(System.in);
-		
-		int a = scan.nextInt();
-		int b = 666;
-		
-		System.out.printf("%d%d", a, b);
-		
-		
-		
-		
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			int z = a * (b % 10) + (a * ((b % 100)/10) * 10) + (a * (b / 100) * 100);
+			System.out.println(a * (b % 10));
+			System.out.println(a * ((b % 100)/10));
+			System.out.println(a * (b / 100));
+			System.out.println(z);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		/*
 		int a = 121; 
