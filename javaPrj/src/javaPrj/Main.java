@@ -1,28 +1,161 @@
 package javaPrj;
 
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws NumberFormatException, IOException {		
 		Scanner scan = new Scanner(System.in);
 		
 		
-
+		while(scan.hasNextInt()) {
 			int a = scan.nextInt();
 			int b = scan.nextInt();
-			int z = a * (b % 10) + (a * ((b % 100)/10) * 10) + (a * (b / 100) * 100);
-			System.out.println(a * (b % 10));
-			System.out.println(a * ((b % 100)/10));
-			System.out.println(a * (b / 100));
-			System.out.println(z);
 			
+			System.out.printf("%d\n",a+b);
+		}
+		
+		
+		
+		
+		
+		
+//		
+//		Scanner scan = new Scanner(System.in);
+//
+//		int i = 1;
+//		while(i != 5000) {
+//			int b = scan.nextInt();
+//			int c = scan.nextInt();
+//			int k = b + c;
+//			if(k != 0) {
+//			System.out.println(k);
+//			} else {
+//				break;
+//			}
+//			i++;
+//		}
+		/*
+		Scanner scan = new Scanner(System.in);
+
+		int i = 1;
+		while(i != 0) {
+			int b = scan.nextInt();
+			int c = scan.nextInt();
+			int k = b + c;
+			if(k != 0) {
+			System.out.println(k);
+			} else {
+				break;
+			}
+			i++;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		
+		int i = 1;
+		while(i <= a) {
+			int c = scan.nextInt();
+			if(c < b) {
+			System.out.printf("%d ", c);
+			}
 			
+			i++;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+
+		int a = scan.nextInt();
+		
+		for(int i = 1; i <= a; i++) {
+			for(int k = 1; k <= a; k++) {
+				if(i+k <= a) {
+					System.out.print(" ");
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+
+		int a = scan.nextInt();
+		int i = 1;
+		
+
+		
+		while(i <= a) {
+			int b = scan.nextInt();
+			int c = scan.nextInt();
+			int k = b + c;
+			System.out.println("Case #"+i+": " + b + " + " + c + " = " + k);
 			
+			i++;
+		}
+		*/
+		/*
+
+		Scanner scan = new Scanner(System.in);
+		
+
+		int a = scan.nextInt();
+		int i = 1;
+		
+
+		
+		while(i <= a) {
+			int b = scan.nextInt();
+			int c = scan.nextInt();
+			int k = b + c;
+			System.out.println("Case #"+i+": "+k);
 			
-			
-			
+			i++;
+		}
+		*/
+		/*
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        int rep = Integer.parseInt(br.readLine());
+        String b = "";
+        
+        int[] z = new int[rep];
+        
+        for(int i = 0; i < rep; i++) {
+           
+           b = br.readLine();
+           String[] d = b.split(" ");
+           String c = d[0];
+           String e = d[1];
+           
+           int x = Integer.parseInt(c);
+           int y = Integer.parseInt(e);
+           z[i] = x + y;
+           
+        }
+        
+        for(int i=0; i<rep; i++)
+      {
+         bw.write(z[i]+"");
+         bw.newLine();
+      }
+        
+        bw.flush();
+        bw.close();
+      */
+ 
+   
+
 			
 			
 			
@@ -284,6 +417,11 @@ public class Main {
 		 * System.out.print("=="); } else if(a < b) { System.out.print("<"); }
 		 */
 
+	}
+
+	private static void BufferedReader(int a) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
