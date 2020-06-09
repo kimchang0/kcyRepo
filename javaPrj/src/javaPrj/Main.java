@@ -5,37 +5,196 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {		
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		
+		
 		Scanner scan = new Scanner(System.in);
 		
+
+		int [] a = new int [3];
 		
-		while(scan.hasNextInt()) {
-			int a = scan.nextInt();
-			int b = scan.nextInt();
-			
-			System.out.printf("%d\n",a+b);
+		for(int i = 0; i < a.length; i++) {
+			a[i] = scan.nextInt();
 		}
 		
+		Arrays.sort(a);
+		System.out.println(a[1]);
+		
+		
+		
+		
+		/*
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		
+		if(a > b && a > c && b > c ) {
+			System.out.println(b);
+		} else if(a > b && a > c && c > b ) {
+			System.out.println(c);
+		} else if(b > a && b > c && a > c ) {
+			System.out.println(a);
+		} else if(b > a && b > c && c > a ) {
+			System.out.println(c);
+		} else if(c > a && c > b && a > b ) {
+			System.out.println(a);
+		} else if(c > a && c > b && b > a ) {
+			System.out.println(b);
+		} else if(b == c && b > a) {
+			System.out.println(a);
+		} else if(a == b && b > c) {
+			System.out.println(c);
+		} else if(a == c && a > b) {
+			System.out.println(b);
+		} else if(a == b || b == c) {
+			System.out.println(a);
+		}
+		*/
 		
 		
 		
 		
 		
-//		
-//		Scanner scan = new Scanner(System.in);
-//
-//		int i = 1;
-//		while(i != 5000) {
-//			int b = scan.nextInt();
-//			int c = scan.nextInt();
-//			int k = b + c;
-//			if(k != 0) {
-//			System.out.println(k);
-//			} else {
-//				break;
-//			}
-//			i++;
-//		}
+		
+		
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a [] = new int [5];
+		int b = 3000;
+		int c = 3000;
+
+		
+		for(int i = 0; i < a.length; i++) {
+			a[i] = scan.nextInt();
+		}
+		for(int k = 0; k < 3; k++) {
+			if(b > a[k]) {
+				b = a[k];
+			}
+		}
+		for(int j = 3; j < 5; j++) {
+			if(c > a[j]) {
+				c = a[j];
+			}
+		}
+		System.out.println((c + b - 50));
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		 int a = 0;
+		 int sum = 0;
+		 int b = 0;
+		 
+		 while(b < 5) {
+			 a = scan.nextInt();
+			 if(a < 40) {
+				 a = 40;
+			 }
+			 sum += a;
+			 b++;
+		 }
+		sum = sum / 5;
+		System.out.println(sum);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		 int a = scan.nextInt();
+	      if (a < 10) {
+	         a *= 10;
+	      }
+	      int one = a / 10;
+	      int two = a % 10;
+	      int save;
+	      int count = 0;
+	      while (true) {
+	         count++;
+	         save = two;
+	         two = (one + two) % 10;
+	         one = save;
+	         if (a == ((one * 10) + two)) {
+	            break;
+	         }
+	      }
+	      System.out.println(count);
+		 */
+		/*
+		int a = scan.nextInt();
+		int c = 0;
+		int d = a;
+		int b = a;
+		int count = 0;
+		
+		if(a < 10) {
+			a = a * 10;
+		}
+		
+			while(true) {
+			b = a;
+			System.out.println("1 b = "+b);
+			
+			if(b == 10) {
+				b = 1;
+			} else {
+				b = b % 10;
+			}
+			
+
+			System.out.println("b = " + b);
+			a = a - (a % 10);
+			a = a / 10;
+			System.out.println("a = " + a);
+			
+			if(a + b >= 10) {
+				a = b * 10 + (b + a) % 10;
+			} else {
+				a = b * 10 + b + a;
+			}
+	
+			
+			count++;
+			if(a == d) {
+				break;
+			}
+			if(count == 60) {
+				break;
+			}
+		}
+		
+		System.out.println("count = " + count);
+		*/
+		
+	
+	/*
+	Scanner scan = new Scanner(System.in);
+		
+		
+	while(scan.hasNextInt()) {
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+			
+		System.out.printf("%d\n",a+b);
+	}
+	*/
+	/*
+	Scanner scan = new Scanner(System.in);
+
+	int i = 1;
+	while(i != 5000) {
+		int b = scan.nextInt();
+			int c = scan.nextInt();
+			int k = b + c;
+			if(k != 0) {
+		System.out.println(k);			
+		} else {
+			break;
+		}
+			i++;
+	}
+	*/
 		/*
 		Scanner scan = new Scanner(System.in);
 
@@ -417,11 +576,9 @@ public class Main {
 		 * System.out.print("=="); } else if(a < b) { System.out.print("<"); }
 		 */
 
-	}
 
-	private static void BufferedReader(int a) {
-		// TODO Auto-generated method stub
-		
+
+
 	}
 
 }
