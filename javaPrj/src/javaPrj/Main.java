@@ -6,7 +6,214 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		
+		
+		
+		
+		 Scanner scan = new Scanner(System.in);
+		  
+	     int n = scan.nextInt();
+	     int a = 0;
+		
+		for(int i = 1; i <= n; i++) {
 
+			if(i <= 99) {
+				a++;
+			} else if((i / 100) - ((i - (i / 100) * 100) / 10) == ((i - (i / 100) * 100) / 10) - (i % 10)) {
+				a++;
+			}
+		}
+		System.out.println(a);
+		
+		/*
+		  Scanner s = new Scanner(System.in);
+		  
+	      int n = s.nextInt();
+	      int m = s.nextInt();
+	      
+	      int i,j;
+	      int k,l;
+	      int hap=0;
+	      int aa[]= new int[n];
+	      for(j=0;j<n;j++) {
+	         aa[j] = s.nextInt();
+	      } //aa[i] 배열의 값을 n개 입력받아 저장한다.
+	      
+	      
+	      
+	      i=1;
+	      while(i<=m) {
+	         k=s.nextInt();
+	         l=s.nextInt();
+	      for(j=k-1;j<=l-1;j++) {
+	         
+	         hap=hap+aa[j];
+	         
+	      }
+	      System.out.println(hap);
+	      hap=0;
+	       i++;
+	      }
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		  
+	    int n = scan.nextInt();
+	    int m = scan.nextInt();
+	    
+	    int [] aa = new int[n];
+	    
+		int i = 0;
+		int hap = 0;
+		
+		while(i < n) {
+			aa[i] = scan.nextInt();
+			i++;
+		}
+
+		i = 1;
+		int k = 0;
+		while(k < m) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			i = a - 1;
+			hap = 0;
+			while(i <= b - 1) {
+				hap += aa[i];
+				i++;
+			}
+			System.out.println(hap);
+			k++;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int t = scan.nextInt();
+		
+		for (int h = 1; h <= t; h++) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			long c = 1;
+			long d = 1;
+			int count = 0;
+			
+			for (int i = 1; i <= a; i++) {
+				count = 1;
+				for (int k = 1; k <= b; k++) {
+					if (i < k) {
+						count++;
+					}
+				}
+				if(count > a) {
+					c *= count;
+				}
+			}
+			for (int i = 1; i <= a; i++) {
+				if(a > b / 2) {
+					if(i <= b - a) {
+					d *= i;
+					}
+				} else { 
+					if(i <= b / 2) {
+					d *= i;
+					}
+				}
+			}
+			System.out.println(c / d);
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		long aa = scan.nextInt();
+		long a = 0;
+		long b = 0;
+		long c = 1;
+		long d = 1;
+		long e = 1;
+		
+		for(int i = 0; i < aa; i++) {
+			a = scan.nextInt();
+			System.out.println("a = " + a);
+			b = scan.nextInt();
+			System.out.println("b = " + b);
+			c = 1;
+			d = 1;
+			e = 1;
+			for(int k = (int)b; k >= a; k--) {
+				c *= k;
+				System.out.println("c = " + c);
+			}
+			for(int k = 1; k <= a; k++) {
+				if(b > a) {
+					d *= b;
+					b--;
+				} else {
+					break;
+				}
+				
+			}			
+			for(int k = 1; k <= a; k++) {
+					e *= k;
+			}
+
+			System.out.println(c/(d*e));
+		}
+		*/
+		/*
+		 		Scanner scan = new Scanner(System.in);
+		
+		int aa = scan.nextInt();
+		int a = 0;
+		int b = 0;
+		long c = 1;
+		long d = 1;
+		long e = 1;
+		
+		for(int i = 0; i < aa; i++) {
+			a = scan.nextInt();
+			b = scan.nextInt();
+			
+			for(int k = 1; k <= a; k++) {
+				c *= k;
+				System.out.println("c k =" + c);
+			}
+
+			for(int k = 1; k <= b; k++) {
+				d *= k;
+			}
+			System.out.println(d);
+			for(int k = 1; k <= b - a; k++) {
+				e *= k;
+			}
+			System.out.println(e);
+			System.out.println("결과 = " + (c / d * e));
+		}
+		 */
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		double b = 0;
+		double c = 0;
+		double save = 0;
+		
+		for(int i = 1; i <= a; i++) {
+			b = scan.nextInt();
+			c = scan.nextInt();
+			save = Math.pow(b/1000, c);
+			System.out.println("Math.pow(b,c) = " + save);
+			save = save % 10;
+			if(save > 0) {
+				System.out.println(save);
+			} else {
+				System.out.println(10);
+			}
+		}
+		*/
+		/*
 		Scanner scan = new Scanner(System.in);
 		
 		int a = scan.nextInt();
@@ -15,9 +222,9 @@ public class Main {
 		for(int i = 0; i < b.length; i++) {
 			b[i] = scan.nextInt();
 		}
+		Arrays.sort(b);
 		System.out.println((b[0] * b[b.length-1]));
-		
-		
+		*/		
 		/*
 		Scanner scan = new Scanner(System.in);
 		
@@ -236,13 +443,6 @@ public class Main {
 			System.out.println(a);
 		}
 		*/
-		
-		
-		
-		
-		
-		
-		
 		/*
 		Scanner scan = new Scanner(System.in);
 		
@@ -351,8 +551,6 @@ public class Main {
 		
 		System.out.println("count = " + count);
 		*/
-		
-	
 	/*
 	Scanner scan = new Scanner(System.in);
 		
@@ -497,15 +695,6 @@ public class Main {
         bw.flush();
         bw.close();
       */
- 
-   
-
-			
-			
-			
-			
-			
-		
 		/*
 		int a = 121; 
 		int d [] = new int [a]; 
@@ -538,11 +727,6 @@ public class Main {
 		}
 		System.out.println(h);
 */
-
-		
-		
-		
-		
 		/*
 		
 		Scanner scan = new Scanner(System.in);
@@ -587,8 +771,6 @@ public class Main {
 		int j = 0;
 		int k = 1;
 
-	
-		
 		while(i <= a) {
 			
 			if(i <= 10) {
@@ -609,9 +791,7 @@ public class Main {
 					
 		}
 		*/
-		
 		//System.out.println(k-1);
-		
 		/*
 		Scanner scan = new Scanner(System.in);
 		
@@ -688,10 +868,6 @@ public class Main {
 		}
 		*/
 		//System.exit(1);
-
-		
-
-
 		/*
 		 * for(int i = 1, k = 2; i - 1 <= b; i += 2, k += 2) { 
 		 * g = arr[i]; 
@@ -760,10 +936,6 @@ public class Main {
 		 * if(a > b) { System.out.print(">"); } else if(a == b) {
 		 * System.out.print("=="); } else if(a < b) { System.out.print("<"); }
 		 */
-
-
-
-
 	}
 
 }
