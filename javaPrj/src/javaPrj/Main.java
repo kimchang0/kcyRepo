@@ -11,6 +11,299 @@ public class Main {
 		
 		
 		
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = 1;
+		int star = 1;
+		
+		for(int i = 1; i < a; i++) {
+			b += 2;
+		}
+		
+		for(int i = 1; i <= b; i++) {
+			if(i <= (b / 2)+1) {
+				for(int k = 2; k <= b; k++) {
+					System.out.print(a >= k ? " " : "");
+				}
+				for(int k = b; k >= 1; k--) {
+					System.out.print(k <= star ? "*" : "");
+				}
+				System.out.println();
+				star += 2;
+				a--;
+			} else {
+				star -= 2;
+				a++;
+				for(int k = 2; k <= b; k++) {
+					System.out.print(a+1 >= k ? " " : "");
+				}
+				for(int k = b; k >= 1; k--) {
+					System.out.print(k <= star-2 ? "*" : "");
+				}
+				System.out.println();
+
+			}
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int aa = scan.nextInt();
+		int a[] = new int[21];
+		int b = 0;
+		
+		for(int i = 0; i < a.length; i++) {
+			if(i > 2) {
+				b = a[i-2] + a[i-1];
+			} else if (i == 2){
+				b = a[i-1];
+			} else {
+				b = i;
+			}
+			a[i] = b;
+		}
+		
+		System.out.println(a[aa]);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		long b = 1;
+		
+		for(int i = 1; i <= a; i++) {
+			b *= i;
+		}
+		System.out.println(b);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = 0;
+		String ss = scan.nextLine();
+		ss = scan.nextLine();
+		String [] s = ss.split("");
+		
+		while(a != 0) {
+			ss = s[a - 1];
+			b += Integer.parseInt(ss);
+			
+			a--;
+		}
+		System.out.println(b);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		String s;
+		String [] ss;
+		int count = 0;
+		int count2 = 0;
+		
+		s = scan.nextLine();
+		for(int k = 0; k < a; k++) {
+			s = scan.nextLine();
+			ss = s.split("");
+			for(int i = 0; i < ss.length; i++) {
+				s = ss[i];
+				if(s.equals("O")) {
+					count++;
+					count2 += count;
+				} else if(s.equals("X")){
+					count = 0;
+				}
+			}
+			System.out.println(count2);
+			count2 = 0;
+			count = 0;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int [] aa;
+		int a = scan.nextInt();
+		int b = 0;
+		int c = 0;
+		int result = 0;
+		
+		for(int i = 0; i < a; i++) {
+			b = scan.nextInt();
+			aa = new int [b];
+			for(int k = 0; k < b; k++) {
+				aa[k] = scan.nextInt();
+				c += aa[k];
+			}
+			c = c / b;
+			for(int j = 0; j < b; j++) {
+				if(aa[j] > c) {
+					result++;
+				}
+			}
+			System.out.printf("%.3f%%\n", (float) result * 100 / b);
+			c = 0;
+			result = 0;
+			aa = null;
+		}
+		*/		
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int [] aa = new int[42];
+		int a = 0;
+		int count = 0;
+		
+		for(int i = 0; i < 10; i++) {
+			a = scan.nextInt() % 42;
+			aa[a]++;
+		}
+		for(int i = 0; i < 42; i ++) {
+			if(aa[i] != 0) {
+				count++;
+			}
+		}
+		System.out.println(count);
+		*/		
+		/*
+		int N[] = new int[10];
+		Scanner s = new Scanner(System.in);
+		int A = s.nextInt();
+		int B = s.nextInt();
+		int C = s.nextInt();
+		int n=A*B*C;
+		while(n!=0){
+			N[n%10]++;
+			System.out.println("N ["+ n%10 +"] = " + N[n%10]);
+			n/=10;
+			System.out.println("n = " + n);
+		}
+		for(A=0; A<10; A++)
+		System.out.println(N[A]);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		long result = a * b * c;
+		String s = String.valueOf(result);
+		String [] ss = s.split("");
+		int count0 = 0;
+		int count1 = 0;
+		int count2 = 0;
+		int count3 = 0;
+		int count4 = 0;
+		int count5 = 0;
+		int count6 = 0;
+		int count7 = 0;
+		int count8 = 0;
+		int count9 = 0;
+		for(int i = 0; i < s.length(); i++) {
+			switch(ss[i]) {
+			case "0":
+				count0++;
+				break;
+			case "1":
+				count1++;
+				break;
+			case "2":
+				count2++;
+				break;
+			case "3":
+				count3++;
+				break;
+			case "4":
+				count4++;
+				break;
+			case "5":
+				count5++;
+				break;
+			case "6":
+				count6++;
+				break;
+			case "7":
+				count7++;
+				break;
+			case "8":
+				count8++;
+				break;
+			case "9":
+				count9++;
+				break;
+			}
+			
+		}
+		System.out.printf("%d \n", count0);
+		System.out.printf("%d \n", count1);
+		System.out.printf("%d \n", count2);
+		System.out.printf("%d \n", count3);
+		System.out.printf("%d \n", count4);
+		System.out.printf("%d \n", count5);
+		System.out.printf("%d \n", count6);
+		System.out.printf("%d \n", count7);
+		System.out.printf("%d \n", count8);
+		System.out.printf("%d \n", count9);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		int [] aa = new int [9];
+		int [] bb = new int [9];
+		int a = 0;
+		
+		for(int i = 0; i < aa.length; i++) {
+			aa[i] = scan.nextInt();
+			bb[i] = aa[i];	
+		}
+		
+		Arrays.sort(aa);
+		
+		for(int i = 0; i < aa.length; i++) {
+			if(bb[i] == aa[aa.length - 1]	) {
+				a = i + 1;
+			}
+		}
+		System.out.println(aa[aa.length - 1]);
+		System.out.println(a);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+
+		int a = scan.nextInt();
+		float [] aa = new float [a];
+		float result = 0;
+		
+		for(int i = 0; i < aa.length; i++) {
+			aa[i] = scan.nextInt();
+		}
+	     
+		Arrays.sort(aa);
+		result = aa[a - 1];
+		
+		for(int i = 0; i < aa.length; i++) {
+			aa[i] = (aa[i] / result) * 100;
+		}
+		result = 0;
+		for(int i = 0; i < aa.length; i++) {
+			result += aa[i] ;
+		}
+		System.out.println(result/a);
+		*/
+		/*
 		 Scanner scan = new Scanner(System.in);
 		  
 	     int n = scan.nextInt();
@@ -25,7 +318,7 @@ public class Main {
 			}
 		}
 		System.out.println(a);
-		
+		*/
 		/*
 		  Scanner s = new Scanner(System.in);
 		  
