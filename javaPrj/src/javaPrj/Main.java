@@ -10,9 +10,224 @@ public class Main {
 		
 		
 		
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		
+		int a = scan.nextInt();
+		String ss = scan.nextLine();
+		String [] s = ss.split("");
+		
+		System.out.print(a);
+		for(int i = 0; i < s.length; i++) {
+			for(int k = 0; k < s.length; k++) {
+			System.out.println(s[i]);
+			}
+			
+		}
+		*/
+		
+		int b;
+		
+		Scanner scan = new Scanner(System.in);
+		String ss;
+		String [] s = new String[3];
+		int a = scan.nextInt();
+		for(int i = 0; i < a; i++) {
+			 ss = scan.nextLine();
+			 s = ss.split("");
+		}
+		for(int i = 0; i < s.length; i++) {
+			System.out.println(s[i]);
+		}
+		
+		System.out.println(s.length);
+		/*
+		int count = 0;
+		
+		for(int i = 0; i < s.length; i++) {
+			if(s[i].equals("")) {
+				s[i] = null;
+			}
+		}
+		for(int i = 0; i < s.length; i++) {
+			System.out.println(i);
+			System.out.println(s[i]);
+		}
+		*/
 		
 		
 		
+		
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		String ss = scan.nextLine();
+		String [] s = ss.split(" ");
+		int count = 0;
+		
+		for(int i = 0; i < s.length; i++) {
+			if(s[i].equals("")) {
+				count++;
+			}
+		}
+		System.out.println(s.length - count);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int [] aa = new int [a];
+		int i = 0;
+		
+		while(i < a) {
+			aa[i] = i;
+			i++;
+		}
+		Arrays.sort(aa);
+		i = 0;
+		while(i < a) {
+			System.out.println(aa[i]);
+			i++;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		int d = 0;
+		int count = 0;
+		
+		while(d != c) {
+			d += a;
+			
+			if(d == c) {
+				count++;
+				break;
+			} else {
+				count++;
+				d -= b;
+			}
+		}
+		System.out.println(count);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		int count = 0;
+		
+		while(true) {
+			if(a < 0) {
+				break;
+			} else if (b >= c){
+				count = -1;
+				break;
+			} else {
+				a += b;
+				a -= c;
+				count++;
+			}
+		}
+		System.out.println("count = " + count);
+		*/
+		/*
+		long n =  7999999999L;
+        long answer = 0;
+        String ss = "" + n;
+        String [] s = ss.split("");
+        Arrays.sort(s);
+        ss = "";
+        for(int i = s.length-1; i >= 0; i--) {
+                ss += s[i];
+        }
+		answer = Long.parseLong(ss);
+		
+		System.out.println(answer);
+		*/
+		/*
+		long num = 0;
+		int answer = 0;
+		int i = 1;
+		int k = 1;
+		
+	while(k >= 1) {
+		num = k;
+		i = 1; 
+		while(i < 1000) {
+			System.out.println("입력 num " + num);
+			if(num % 2 == 0) {
+				num = num /2;
+			}else if(num == 1){
+                num = 1;
+            } else {
+				num *=  3;
+				num +=  1;
+				System.out.println("거짓");
+			}
+			if(num == 1) {
+				answer = i;
+			break;
+			} else if(i == 500) {
+				answer -= 1;
+			break;
+			} else if(num < 0) {
+			break;
+			}
+			i++;
+		}
+		System.out.println("마지막 num의 값" + num);
+		k--;
+		if(num < 0) {
+		break;
+		}
+	}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		String n = scan.nextLine();
+		String [] s = n.split("");
+		int a = 0;
+		
+		for(int i = 0; i < s.length; i++) {
+			n = s[i];
+			a += Integer.parseInt(n);
+		}
+		System.out.println(a);
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c;
+		int d = 0;
+		int [] aa = new int [a];
+		
+		for(int i = 0; i < a; i++) {
+			aa[i] = scan.nextInt();
+		}
+		for(int i = 0; i < b; i++) {
+			a = scan.nextInt();
+			c = scan.nextInt();
+			for(int k = a-1; k <= c-1; k++) {
+				d+=aa[k];
+			}
+			System.out.println(d);
+			d = 0;
+		}
+		*/
+		/*
+		Scanner scan = new Scanner(System.in);
+		char a = scan.next().charAt(0);
+		System.out.printf("%d", (int)a);
+		*/
+		/*
 		Scanner scan = new Scanner(System.in);
 		
 		int a = scan.nextInt();
@@ -47,16 +262,7 @@ public class Main {
 
 			}
 		}
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		*/
 		/*
 		Scanner scan = new Scanner(System.in);
 		
