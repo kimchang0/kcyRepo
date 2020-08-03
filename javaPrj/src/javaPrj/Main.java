@@ -5,11 +5,20 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+	public static void main(String[] args) throws Exception, IOException {
 		
+
+		Scanner scan = new Scanner(System.in);
 		
+		int number = scan.nextInt();
 		
-		
+		for(int i = number + 1; i >= 0; i--) {
+			for(int k = 1; k <= number; k++) {
+				System.out.print(k < i ? "*" : "");
+			}
+			System.out.println();
+		}
+
 		/*
 		Scanner scan = new Scanner(System.in);
 		
@@ -26,7 +35,7 @@ public class Main {
 			
 		}
 		*/
-		
+		/*
 		int b;
 		
 		Scanner scan = new Scanner(System.in);
@@ -42,7 +51,7 @@ public class Main {
 		}
 		
 		System.out.println(s.length);
-		/*
+		
 		int count = 0;
 		
 		for(int i = 0; i < s.length; i++) {
@@ -55,10 +64,6 @@ public class Main {
 			System.out.println(s[i]);
 		}
 		*/
-		
-		
-		
-		
 		/*
 		Scanner scan = new Scanner(System.in);
 		
