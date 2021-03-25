@@ -4,7 +4,7 @@ public class programers_string_sort {
 
 	public static void main(String[] args) {
 
-		String a = "a234";
+		String a = "test";
 		boolean STRING_IS_NUMBER = a.matches("^[0-9]*$");
 		boolean STRING_IS_4_OR_6 = false;
 
