@@ -9,7 +9,7 @@ public class Programers_min_num_delete {
 	static int tmp;
 	public static void main(String[] args) {
 
-		int[] arr = {5,4,3,2,1};
+		int[] arr = {5};
 		System.out.println(Arrays.toString(solution(arr)));
 		
 	}
