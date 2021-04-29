@@ -1,42 +1,36 @@
 package kcy;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Programers_least_common_multiple_and_Greatest_common_divisor {
 
 	public static void main(String[] args) {
 
-		
+		System.out.println(Arrays.toString(solution(2, 5)));
 		
 	}
 	
-    public int[] solution(int n, int m) {
+    public static int[] solution(int n, int m) {
         int[] answer = new int [2];
-        List <Integer> lList = new ArrayList<>();
-        List <Integer> rList = new ArrayList<>();
         
-        for(int i = 1; i <= n; i++) {
-        	if(n % i == 0) {
-        		lList.add(i);
-        	}
-        }
-        
-        for(int i = 1; i <= m; i++) {
-        	if(m % i == 0) {
-        		rList.add(i);
-        	}
-        }
-        
-        for(int i = 0; i < lList.size(); i++) {
-        	for(int j = 0; j < rList.size(); j++) {
-        		if(lList.get(i) == rList.get(j) && answer[0] < rList.get(j)) {
-        			answer[0] = rList.get(j);
-        		}
-        	}
-        }
+        answer[0] = gcd(n,m);
+        answer[1] = lcm(n,m);
         
         return answer;
     }
+    
+	static int gcd(int a, int b){ // 최대공약수
+		while(b!=0){
+			int r = a%b;
+			a= b;
+			b= r;
+		}
+		return a;
+	}
+	
+	static int lcm(int a, int b){ // 최소 공배수
+		// 0이 아닌 두 수의 곱 / 두 수의 최대공약수
+	    return a * b / gcd(a,b);
+	}
 
 }
