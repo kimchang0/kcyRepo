@@ -32,8 +32,9 @@ public class Programmers_dart_game {
         for(int i = 0; i < arr.length; i++) {
         	String[] numbers = arr[i].split("x");
         	int temp_num = 1;
+        	System.out.println("numbers[i]: " + numbers[1]);
         	for(int j = 1; j < Integer.parseInt(numbers[1]); j++) {
-        		temp_num *= Integer.parseInt(arr[0]);
+        		temp_num *= Integer.parseInt(numbers[0]);
         	}
         	
         }
